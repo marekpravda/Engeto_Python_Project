@@ -81,6 +81,7 @@ neutral = hoarding_bicycles[hoarding_bicycles['Difference'] == 0]
 #  pre stanice, ktore by som označil ako tie na ktorych chybaju bicykle som urcil podmienky tak aby na danej stanici priemerne ubudlo o jeden bicykel viac nez pribudlo
 missing = hoarding_bicycles[hoarding_bicycles['Difference'] < -776]
 
+# vypocet vzdialenosti medzi stanicami
 def haversine_np(lon1, lat1, lon2, lat2):
 
     lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])
